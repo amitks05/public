@@ -1,0 +1,8 @@
+custom_module.search:
+  path: '/get-json'
+  defaults:
+    _controller: '\Drupal\custom_module\Controller\CustomModuleController::getjson'
+    _title: 'Get Json'
+  requirements: 
+    _permission: 'access content'
+    _method: 'GET'

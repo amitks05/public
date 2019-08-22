@@ -1,0 +1,6 @@
+name: Custom Module
+description: Custom Module
+version: 8.x
+core: 8.x
+package: Custom
+type: module

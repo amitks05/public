@@ -1,0 +1,128 @@
+custom_pages.search:
+  path: '/all-projects'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::search'
+    _title: 'All Project'
+  requirements: 
+    _permission: 'access content'
+    _method: 'POST'
+custom_pages.commercial_thank_you:
+  path: '/projects/commercial/{arg1}/{arg2}/{arg3}/thank-you'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::thank_you'
+    _title: 'Thank you'
+  requirements: 
+    _permission: 'access content'
+custom_pages.thank_you:
+  path: '/projects/{arg1}/{arg2}/{arg3}/thank-you'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::thank_you'
+    _title: 'Thank you'
+  requirements: 
+    _permission: 'access content'
+custom_pages.township_thank_you:
+  path: '/township/{arg1}/thank-you'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::township_thank_you'
+    _title: 'Thank you'
+  requirements: 
+    _permission: 'access content'
+custom_pages.commercial_projects:
+  path: '/commercial-landing-projects'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::commercial_projects'
+    _title: 'Commercial Landing Project'
+  requirements: 
+    _permission: 'access content'
+    _method: 'POST'
+custom_pages.admin_page:
+  path: '/admin/lodha'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::admin_page'
+    _title: 'Lodha'
+  requirements:
+    _role: 'administrator'
+custom_pages.lead_form_listing:
+  path: '/admin/lodha/lead-form-listing'
+  defaults:
+    _title: 'Lead Form Listing'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::lead_form_listing'
+  requirements:
+    _role: 'administrator'
+custom_pages.lead_form_details:
+  path: '/admin/lodha/lead-form-listing/details'
+  defaults:
+    _title: 'Lead Form Details'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::lead_form_details'
+  requirements:
+    _role: 'administrator'
+custom_pages.download:
+  path: '/admin/lodha/lead-form-listing/download'
+  defaults:
+    _title: 'Download'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::download'
+  requirements:
+    _permission: 'access content'
+custom_pages.delete:
+  path: '/admin/lodha/lead-form-listing/delete'
+  defaults:
+    _title: 'Delete'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::delete'
+  requirements:
+    _permission: 'administer delete'
+custom_pages.career_listing:
+  path: '/admin/lodha/career-listing'
+  defaults:
+    _title: 'Career Listing'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::career_listing'
+  requirements:
+    _role: 'administrator + HR'    
+custom_pages.career_details:
+  path: '/admin/lodha/career-listing/details'
+  defaults:
+    _title: 'Career Details'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::career_details'
+  requirements:
+     _role: 'administrator + HR'
+custom_pages.career_download:
+  path: '/admin/lodha/career-listing/career_download'
+  defaults:
+    _title: 'Download'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::career_download'
+  requirements:
+    _permission: 'access content'
+custom_pages.careerdelete:
+  path: '/admin/lodha/career-listing/career_delete'
+  defaults:
+    _title: 'Delete'
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::career_delete'
+  requirements:
+     _role: 'administrator + HR'
+custom_pages.cp:
+  path: '/CP/create_project'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::create_project'
+    _title: 'CP'
+  requirements: 
+    _role: 'administrator + broker'
+custom_pages.cpproject:
+  path: '/CP/{arg1}/{arg2}'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::cp_project'
+    _title: 'CP'
+  requirements: 
+    _permission: 'access content'
+custom_pages.cp_thank_you:
+  path: '/cp/{arg1}/{arg2}/thank-you'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::cp_thank_you'
+    _title: 'Thank you'
+  requirements: 
+    _permission: 'access content'
+custom_pages.officefor:
+  path: '/project/commercial/{arg1}'
+  defaults:
+    _controller: '\Drupal\custom_pages\Controller\CustomPagesController::office_for_sale_or_lease'
+    _title: 'Office for Lease or Sale'
+  requirements: 
+    _permission: 'access content'
